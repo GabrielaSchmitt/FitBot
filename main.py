@@ -18,7 +18,7 @@ class Message(BaseModel):
 
 @app.post("/a")
 async def testing():
-    return {"status": "success", "message": "acessed."}
+    return "luz no fim do tunel acionada com sucesso"
 
 @app.post("/webhook")
 async def webhook(message: Message):
