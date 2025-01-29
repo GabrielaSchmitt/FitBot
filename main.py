@@ -16,7 +16,7 @@ class Message(BaseModel):
     text: str
     timestamp: str
 
-@app.post("/a")
+@app.get("/a")
 async def testing():
     return "luz no fim do tunel acionada com sucesso"
 
