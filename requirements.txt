@@ -1,3 +1,4 @@
 fastapi==0.95.2
 pymongo==4.3.3
 uvicorn==0.22.0  # necessário para rodar o FastAPI
+python-dotenv==0.21.1
