@@ -16,6 +16,10 @@ class Message(BaseModel):
     text: str
     timestamp: str
 
+@app.post("/a")
+async def testing():
+    return {"status": "success", "message": "acessed."}
+
 @app.post("/webhook")
 async def webhook(message: Message):
     if message.text.startswith("fitbot"):
